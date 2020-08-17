@@ -10,6 +10,12 @@ app.get("/hello", (req, res) => {
   });
 });
 
+app.get("/other", (req, res) => {
+  res.json({
+    message: `Another route.`,
+  });
+});
+
 app.listen(PORT, () => {
   console.log(`Server is now running at port ${PORT}.`);
 });
